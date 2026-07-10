@@ -1,25 +1,19 @@
 'use strict';
 
-const settings = require('ep_etherpad-lite/node/utils/Settings');
-const {template} = require('ep_plugin_helpers');
+const eejs = require('ep_etherpad-lite/node/eejs/');
 
-exports.eejsBlock_editbarMenuLeft = template('ep_font_colors_rgb/templates/editbarButtons.ejs', {
-  skip: () => JSON.stringify(settings.toolbar).indexOf('fontColor') > -1,
-});
+exports.eejsBlock_editbarMenuLeft = (hook, args, cb) => {
+  if (args.renderContext.isReadOnly) return cb();
+  args.content += eejs.require('ep_font_colors_rgb/templates/editbarButtons.ejs');
+  return cb();
+};
 
-exports.padInitToolbar = (hook, args, cb) => {
-  const toolbar = args.toolbar;
-  const colors = ['black', 'red', 'green', 'blue', 'yellow', 'orange'];
-  const fontColor = toolbar.selectButton({
-    command: 'fontColor',
-    class: 'color-selection',
-    selectId: 'color-selection',
-  });
-  fontColor.addOption('dummy', 'color', {'data-l10n-id': 'ep_font_colors_rgb.color'});
-  colors.forEach((color, value) => {
-    fontColor.addOption(value, color, {'data-l10n-id': `ep_font_colors_rgb.${color}`});
-  });
+exports.eejsBlock_styles = (hook, args, cb) => {
+  args.content += '<link href="../static/plugins/ep_font_colors_rgb/static/css/color.css" rel="stylesheet">';
+  return cb();
+};
 
-  toolbar.registerButton('fontColor', fontColor);
+exports.eejsBlock_body = (hook, args, cb) => {
+  args.content += eejs.require('ep_font_colors_rgb/templates/colorPanel.ejs');
   return cb();
 };

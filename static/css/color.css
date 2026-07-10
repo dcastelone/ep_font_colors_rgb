@@ -1,61 +1,88 @@
-.ep_font_colors_rgb {
-  font-family: font-awesome;
+.toolbar ul.menu_left li.font-color-icon.ep_font_colors_rgb {
+  display: flex !important;
+  align-items: center;
 }
 
-.ep_font_colors_rgb .buttonicon:before {
-  content: "\e81b";
-  top: 2px !important;
-  border-bottom: solid 1px red;
+.ep-font-colors-rgb-button {
+  position: relative;
+  --ep-font-colors-rgb-current-color: #202124;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 3px;
+  background-color: transparent;
+  background-image: url('../img/text-color.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  cursor: pointer;
+}
+
+.ep-font-colors-rgb-button::before {
+  content: "";
+}
+
+.ep-font-colors-rgb-button::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  right: 7px;
+  bottom: 5px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--ep-font-colors-rgb-current-color, #202124);
+}
+
+.ep-font-colors-rgb-button:hover,
+.ep-font-colors-rgb-button[aria-expanded="true"] {
+  background-color: #f2f3f4;
 }
 
 .ep-font-colors-rgb-panel {
-  position: relative;
-  width: 0;
-  height: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 268px;
   margin: 0;
   padding: 0;
   overflow: visible;
   white-space: normal;
-  z-index: 1000;
+  z-index: 10000;
 }
 
-#font-color.ep-font-colors-rgb-panel {
+#ep-font-colors-rgb-panel.ep-font-colors-rgb-panel[hidden] {
   display: none;
 }
 
-#font-color.ep-font-colors-rgb-panel[style*="display: list-item"],
-#font-color.ep-font-colors-rgb-panel[style*="display: block"] {
-  display: list-item !important;
+#ep-font-colors-rgb-panel.ep-font-colors-rgb-panel.is-open {
+  display: block;
 }
 
 .ep-font-colors-rgb-menu {
-  position: absolute;
-  top: 30px;
-  left: -38px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 176px;
+  gap: 10px;
+  width: 268px;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #dadce0;
   border-radius: 6px;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(60, 64, 67, 0.28);
+  box-shadow: 0 4px 10px rgba(60, 64, 67, 0.18), 0 1px 3px rgba(60, 64, 67, 0.22);
   color: #202124;
 }
 
 .ep-font-colors-rgb-custom {
   display: grid;
-  grid-template-columns: 34px 1fr;
-  gap: 8px;
+  grid-template-columns: 36px 1fr;
+  gap: 10px;
   align-items: center;
 }
 
 .ep-font-colors-rgb-picker {
-  width: 32px;
-  height: 30px;
-  padding: 0;
+  width: 34px;
+  height: 32px;
+  padding: 1px;
   border: 1px solid #dadce0;
   border-radius: 4px;
   background: transparent;
@@ -65,7 +92,7 @@
 .ep-font-colors-rgb-value {
   width: 100%;
   min-width: 0;
-  height: 30px;
+  height: 32px;
   box-sizing: border-box;
   padding: 3px 6px;
   border: 1px solid #dadce0;
@@ -74,7 +101,7 @@
 }
 
 .ep-font-colors-rgb-clear {
-  height: 28px;
+  height: 30px;
   border: 1px solid #dadce0;
   border-radius: 4px;
   background: #fff;
@@ -85,18 +112,23 @@
 
 .ep-font-colors-rgb-swatches {
   display: grid;
-  grid-template-columns: repeat(8, 16px);
+  grid-template-columns: repeat(10, 20px);
   gap: 4px;
+  padding: 2px;
 }
 
 .ep-font-colors-rgb-swatch {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   box-sizing: border-box;
-  border: 1px solid #dadce0;
-  border-radius: 50%;
+  border: 1px solid rgba(60, 64, 67, 0.28);
+  border-radius: 2px;
   padding: 0;
   cursor: pointer;
+}
+
+.ep-font-colors-rgb-swatch:hover {
+  border-color: #202124;
 }
 
 .ep-font-colors-rgb-swatch.selected {
