@@ -10,10 +10,11 @@ existing pads that contain values such as `color::red`, `color::blue`, or
 ## Attribution
 
 This package was initially derived from the official Etherpad
-[`ep_font_color`](https://github.com/ether/ep_font_color) plugin, which is
-licensed under the Apache License 2.0. The original fixed-palette behavior,
-attribute naming, localization structure, and export/import hook patterns
-provided the compatibility baseline for this plugin.
+[`ep_font_color`](https://github.com/ether/ep_font_color) plugin. The original
+plugin package lists John McLear as its author and is licensed under the Apache
+License 2.0. The original fixed-palette behavior, attribute naming,
+localization structure, and export/import hook patterns provided the
+compatibility baseline for this plugin.
 
 `ep_font_colors_rgb` is an independent package and repository, not a fork of the
 upstream GitHub repository. It is intended to replace `ep_font_color` when a
