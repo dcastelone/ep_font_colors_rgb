@@ -30,19 +30,6 @@ pnpm run plugins i ep_font_colors_rgb
 
 Do not install this alongside `ep_font_color`; it is intended to replace it.
 
-## Development
-
-Inside an Etherpad checkout:
-
-```sh
-pnpm run plugins i ep_font_colors_rgb
-```
-
-For local unpublished testing, use a local package install workflow or publish
-a prerelease first. Etherpad 3.3.x records active plugins in
-`var/installed_plugins.json`, so a raw symlink into `src/plugin_packages` is not
-enough to activate an unpublished plugin.
-
 ## Compatibility
 
 - Attribute name: `color`
