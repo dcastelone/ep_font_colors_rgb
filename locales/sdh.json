@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"TerranBoy"
+		]
+	},
+	"ep_font_colors_rgb.color": "ڕەنگ",
+	"ep_font_colors_rgb.black": "ڕەش",
+	"ep_font_colors_rgb.red": "سوور",
+	"ep_font_colors_rgb.green": "سەوز",
+	"ep_font_colors_rgb.blue": "کەو",
+	"ep_font_colors_rgb.yellow": "زەرد",
+	"ep_font_colors_rgb.orange": "نارنجی"
+}

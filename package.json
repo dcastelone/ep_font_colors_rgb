@@ -1,0 +1,32 @@
+{
+  "description": "Apply arbitrary RGB colors to Etherpad text while preserving ep_font_color compatibility",
+  "name": "ep_font_colors_rgb",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "VHS Learning"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcastelone/ep_font_colors_rgb.git"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://etherpad.org/"
+  },
+  "dependencies": {
+    "ep_plugin_helpers": "^0.6.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-etherpad": "^4.0.5",
+    "typescript": "^6.0.3"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Adr mm"
+		]
+	},
+	"ep_font_colors_rgb.color": "Colore",
+	"ep_font_colors_rgb.black": "nieddu",
+	"ep_font_colors_rgb.red": "arrùbiu",
+	"ep_font_colors_rgb.green": "birde",
+	"ep_font_colors_rgb.blue": "biaitu",
+	"ep_font_colors_rgb.yellow": "grogu",
+	"ep_font_colors_rgb.orange": "arantzu"
+}

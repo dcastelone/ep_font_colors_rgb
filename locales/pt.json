@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Guilha"
+		]
+	},
+	"ep_font_colors_rgb.color": "Cor",
+	"ep_font_colors_rgb.black": "preto",
+	"ep_font_colors_rgb.red": "vermelho",
+	"ep_font_colors_rgb.green": "verde",
+	"ep_font_colors_rgb.blue": "azul",
+	"ep_font_colors_rgb.yellow": "amarelo",
+	"ep_font_colors_rgb.orange": "laranja"
+}

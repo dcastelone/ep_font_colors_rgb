@@ -1,0 +1,70 @@
+.ep_font_colors_rgb {
+  font-family: font-awesome;
+}
+
+.ep_font_colors_rgb .buttonicon:before {
+  content: "\e81b";
+  top: 2px !important;
+  border-bottom: solid 1px red;
+}
+
+.ep-font-colors-rgb-panel {
+  align-items: center;
+  gap: 4px;
+  padding: 3px 6px;
+  white-space: nowrap;
+}
+
+#font-color.ep-font-colors-rgb-panel {
+  display: none;
+}
+
+#font-color.ep-font-colors-rgb-panel[style*="display: list-item"],
+#font-color.ep-font-colors-rgb-panel[style*="display: block"] {
+  display: inline-flex !important;
+}
+
+.ep-font-colors-rgb-picker {
+  width: 34px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid #a8a8a8;
+  background: transparent;
+}
+
+.ep-font-colors-rgb-value {
+  width: 150px;
+  height: 26px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.ep-font-colors-rgb-clear {
+  height: 26px;
+  font-size: 12px;
+}
+
+.ep-font-colors-rgb-swatches {
+  display: inline-flex;
+  gap: 3px;
+  vertical-align: middle;
+}
+
+.ep-font-colors-rgb-swatch {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #777;
+  padding: 0;
+}
+
+.ep-font-colors-rgb-swatch.selected {
+  outline: 2px solid #1a73e8;
+  outline-offset: 1px;
+}
+
+[data-color="black"], .color\:black { color: black; }
+[data-color="red"], .color\:red { color: red; }
+[data-color="green"], .color\:green { color: green; }
+[data-color="blue"], .color\:blue { color: blue; }
+[data-color="yellow"], .color\:yellow { color: yellow; }
+[data-color="orange"], .color\:orange { color: orange; }

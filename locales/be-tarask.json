@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ucukor"
+		]
+	},
+	"ep_font_colors_rgb.color": "Колер",
+	"ep_font_colors_rgb.black": "чорны",
+	"ep_font_colors_rgb.red": "чырвоны",
+	"ep_font_colors_rgb.green": "зялёны",
+	"ep_font_colors_rgb.blue": "сіні",
+	"ep_font_colors_rgb.yellow": "жоўты",
+	"ep_font_colors_rgb.orange": "аранжавы"
+}

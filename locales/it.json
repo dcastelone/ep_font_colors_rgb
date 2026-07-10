@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"ep_font_colors_rgb.color": "Colore",
+	"ep_font_colors_rgb.black": "nero",
+	"ep_font_colors_rgb.red": "rosso",
+	"ep_font_colors_rgb.green": "verde",
+	"ep_font_colors_rgb.blue": "blu",
+	"ep_font_colors_rgb.yellow": "giallo",
+	"ep_font_colors_rgb.orange": "arancione"
+}

@@ -1,0 +1,9 @@
+{
+  "ep_font_colors_rgb.color" : "Color",
+  "ep_font_colors_rgb.black" : "black",
+  "ep_font_colors_rgb.red" : "red",
+  "ep_font_colors_rgb.green" : "green",
+  "ep_font_colors_rgb.blue" : "blue",
+  "ep_font_colors_rgb.yellow" : "yellow",
+  "ep_font_colors_rgb.orange" : "orange"
+}

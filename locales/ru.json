@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Megakott"
+		]
+	},
+	"ep_font_colors_rgb.color": "Цвет",
+	"ep_font_colors_rgb.black": "чёрный",
+	"ep_font_colors_rgb.red": "красный",
+	"ep_font_colors_rgb.green": "зелёный",
+	"ep_font_colors_rgb.blue": "синий",
+	"ep_font_colors_rgb.yellow": "жёлтый",
+	"ep_font_colors_rgb.orange": "оранжевый"
+}

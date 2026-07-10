@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cabal"
+		]
+	},
+	"ep_font_colors_rgb.color": "ਰੰਗ",
+	"ep_font_colors_rgb.black": "ਕਾਲਾ",
+	"ep_font_colors_rgb.red": "ਲਾਲ",
+	"ep_font_colors_rgb.green": "ਹਰਾ",
+	"ep_font_colors_rgb.blue": "ਨੀਲਾ",
+	"ep_font_colors_rgb.yellow": "ਪੀਲਾ",
+	"ep_font_colors_rgb.orange": "ਸੰਤਰੀ"
+}

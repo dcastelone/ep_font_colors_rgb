@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robin Owain"
+		]
+	},
+	"ep_font_colors_rgb.color": "Lliw",
+	"ep_font_colors_rgb.black": "du",
+	"ep_font_colors_rgb.red": "coch",
+	"ep_font_colors_rgb.green": "gwyrdd",
+	"ep_font_colors_rgb.blue": "glas",
+	"ep_font_colors_rgb.yellow": "melyn",
+	"ep_font_colors_rgb.orange": "oren"
+}

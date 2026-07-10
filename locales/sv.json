@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"ep_font_colors_rgb.color": "Färg",
+	"ep_font_colors_rgb.black": "svart",
+	"ep_font_colors_rgb.red": "röd",
+	"ep_font_colors_rgb.green": "grön",
+	"ep_font_colors_rgb.blue": "blå",
+	"ep_font_colors_rgb.yellow": "gul",
+	"ep_font_colors_rgb.orange": "orange"
+}

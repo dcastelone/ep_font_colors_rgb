@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"ep_font_colors_rgb.color": "색",
+	"ep_font_colors_rgb.black": "검은색",
+	"ep_font_colors_rgb.red": "빨간색",
+	"ep_font_colors_rgb.green": "녹색",
+	"ep_font_colors_rgb.blue": "파란색",
+	"ep_font_colors_rgb.yellow": "노란색",
+	"ep_font_colors_rgb.orange": "오렌지색"
+}

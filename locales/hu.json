@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"ep_font_colors_rgb.color": "Szín",
+	"ep_font_colors_rgb.black": "fekete",
+	"ep_font_colors_rgb.red": "piros",
+	"ep_font_colors_rgb.green": "zöld",
+	"ep_font_colors_rgb.blue": "kék",
+	"ep_font_colors_rgb.yellow": "sárga",
+	"ep_font_colors_rgb.orange": "narancssárga"
+}

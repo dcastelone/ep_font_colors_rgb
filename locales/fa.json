@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Darafsh"
+		]
+	},
+	"ep_font_colors_rgb.color": "رنگ",
+	"ep_font_colors_rgb.black": "سیاه",
+	"ep_font_colors_rgb.red": "قرمز",
+	"ep_font_colors_rgb.green": "سبز",
+	"ep_font_colors_rgb.blue": "آبی",
+	"ep_font_colors_rgb.yellow": "زرد",
+	"ep_font_colors_rgb.orange": "نارنجی"
+}

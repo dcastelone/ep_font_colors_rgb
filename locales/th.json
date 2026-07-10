@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andibecker",
+			"Trisorn Triboon"
+		]
+	},
+	"ep_font_colors_rgb.color": "สี",
+	"ep_font_colors_rgb.black": "สีดำ",
+	"ep_font_colors_rgb.red": "สีแดง",
+	"ep_font_colors_rgb.green": "สีเขียว",
+	"ep_font_colors_rgb.blue": "สีฟ้า",
+	"ep_font_colors_rgb.yellow": "สีเหลือง",
+	"ep_font_colors_rgb.orange": "สีส้ม"
+}

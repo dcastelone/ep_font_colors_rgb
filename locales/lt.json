@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"ep_font_colors_rgb.color": "Spalva",
+	"ep_font_colors_rgb.black": "juoda",
+	"ep_font_colors_rgb.red": "raudona",
+	"ep_font_colors_rgb.green": "žalia",
+	"ep_font_colors_rgb.blue": "mėlyna",
+	"ep_font_colors_rgb.yellow": "geltona",
+	"ep_font_colors_rgb.orange": "oranžinė"
+}

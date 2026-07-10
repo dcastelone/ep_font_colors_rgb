@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Volvox"
+		]
+	},
+	"ep_font_colors_rgb.color": "Faarf",
+	"ep_font_colors_rgb.black": "schwaarz",
+	"ep_font_colors_rgb.red": "rout",
+	"ep_font_colors_rgb.green": "gréng",
+	"ep_font_colors_rgb.blue": "blo",
+	"ep_font_colors_rgb.yellow": "giel",
+	"ep_font_colors_rgb.orange": "orange"
+}

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"ep_font_colors_rgb.color": "Culore",
+	"ep_font_colors_rgb.black": "gnure",
+	"ep_font_colors_rgb.red": "russe",
+	"ep_font_colors_rgb.green": "verde",
+	"ep_font_colors_rgb.blue": "blù",
+	"ep_font_colors_rgb.yellow": "gialle",
+	"ep_font_colors_rgb.orange": "arangione"
+}

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"SZ475"
+		]
+	},
+	"ep_font_colors_rgb.color": "Culoare",
+	"ep_font_colors_rgb.black": "negru",
+	"ep_font_colors_rgb.red": "roșu",
+	"ep_font_colors_rgb.green": "verde",
+	"ep_font_colors_rgb.blue": "albastru",
+	"ep_font_colors_rgb.yellow": "galben",
+	"ep_font_colors_rgb.orange": "portocaliu"
+}

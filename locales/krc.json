@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Къарачайлы"
+		]
+	},
+	"ep_font_colors_rgb.color": "Бет (бояу)",
+	"ep_font_colors_rgb.black": "къара",
+	"ep_font_colors_rgb.red": "къызыл",
+	"ep_font_colors_rgb.green": "джашил",
+	"ep_font_colors_rgb.blue": "кёксюл",
+	"ep_font_colors_rgb.yellow": "сары",
+	"ep_font_colors_rgb.orange": "къызгъылдым-сары"
+}

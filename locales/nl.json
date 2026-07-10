@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aranka",
+			"woeterman_94"
+		]
+	},
+	"ep_font_colors_rgb.color": "Kleur",
+	"ep_font_colors_rgb.black": "zwart",
+	"ep_font_colors_rgb.red": "rood",
+	"ep_font_colors_rgb.green": "groen",
+	"ep_font_colors_rgb.blue": "blauw",
+	"ep_font_colors_rgb.yellow": "geel",
+	"ep_font_colors_rgb.orange": "oranje"
+}

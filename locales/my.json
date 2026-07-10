@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andibecker"
+		]
+	},
+	"ep_font_colors_rgb.color": "အရောင်",
+	"ep_font_colors_rgb.black": "အနက်ရောင်",
+	"ep_font_colors_rgb.red": "အနီေရာင်",
+	"ep_font_colors_rgb.green": "အစိမ်းရောင်",
+	"ep_font_colors_rgb.blue": "အပြာရောင်",
+	"ep_font_colors_rgb.yellow": "အဝါရောင်",
+	"ep_font_colors_rgb.orange": "လိမ္မော်သီး"
+}

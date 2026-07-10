@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"ep_font_colors_rgb.color": "Farve",
+	"ep_font_colors_rgb.black": "sort",
+	"ep_font_colors_rgb.red": "rød",
+	"ep_font_colors_rgb.green": "grøn",
+	"ep_font_colors_rgb.blue": "blue",
+	"ep_font_colors_rgb.yellow": "gul",
+	"ep_font_colors_rgb.orange": "orange"
+}
