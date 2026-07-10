@@ -7,6 +7,18 @@ storage format. It continues to use Etherpad's `color::<value>` attribute, so
 existing pads that contain values such as `color::red`, `color::blue`, or
 `color::orange` continue to render. New colors are normalized to `#rrggbb`.
 
+## Attribution
+
+This package was initially derived from the official Etherpad
+[`ep_font_color`](https://github.com/ether/ep_font_color) plugin, which is
+licensed under the Apache License 2.0. The original fixed-palette behavior,
+attribute naming, localization structure, and export/import hook patterns
+provided the compatibility baseline for this plugin.
+
+`ep_font_colors_rgb` is an independent package and repository, not a fork of the
+upstream GitHub repository. It is intended to replace `ep_font_color` when a
+full RGB/hex text color picker is needed while preserving existing pad content.
+
 ## Install
 
 After publishing to npm:
