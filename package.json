@@ -1,7 +1,7 @@
 {
   "description": "Apply arbitrary RGB colors to Etherpad text while preserving ep_font_color compatibility",
   "name": "ep_font_colors_rgb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "Apache-2.0",
   "author": {
     "name": "VHS Learning"

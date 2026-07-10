@@ -37,7 +37,9 @@ const setPanelColor = (color) => {
   $panel.find('.ep-font-colors-rgb-value').val(normalized);
   $panel.find('.ep-font-colors-rgb-swatch').removeClass('selected');
   if (normalized) {
-    $panel.find(`.ep-font-colors-rgb-swatch[data-color="${normalized}"]`).addClass('selected');
+    $panel.find('.ep-font-colors-rgb-swatch').filter(function () {
+      return normalizeColor($(this).attr('data-color')) === normalized;
+    }).addClass('selected');
   }
 };
 
@@ -51,14 +53,37 @@ const applyColorFromPanel = (context, rawColor) => {
 
 exports.postAceInit = (hook, context) => {
   const $panel = $('#font-color');
+  const $button = $('.font-color-icon.ep_font_colors_rgb > a');
 
-  $('.font-color-icon').on('click', () => {
+  const closePanel = () => {
+    $panel.hide();
+    $button.attr('aria-expanded', 'false');
+  };
+
+  const openPanel = () => {
+    $panel.show();
+    $button.attr('aria-expanded', 'true');
+  };
+
+  $('.font-color-icon.ep_font_colors_rgb').on('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
     $panel.toggle();
+    $button.attr('aria-expanded', $panel.is(':visible') ? 'true' : 'false');
     context.ace.focus();
+  });
+
+  $panel.on('click', (e) => e.stopPropagation());
+
+  $(document).on('click', closePanel);
+
+  $(document).on('keydown', (e) => {
+    if (e.key === 'Escape') closePanel();
   });
 
   $panel.find('.ep-font-colors-rgb-picker').on('input change', function () {
     applyColorFromPanel(context, this.value);
+    openPanel();
   });
 
   $panel.find('.ep-font-colors-rgb-value').on('keydown', function (e) {
@@ -73,11 +98,13 @@ exports.postAceInit = (hook, context) => {
 
   $panel.find('.ep-font-colors-rgb-swatch').on('click', function () {
     applyColorFromPanel(context, $(this).attr('data-color'));
+    closePanel();
   });
 
   $panel.find('.ep-font-colors-rgb-clear').on('click', () => {
     context.ace.callWithAce((ace) => ace.ace_doInsertColor(''), 'clearRgbFontColor', true);
     setPanelColor('');
+    closePanel();
     context.ace.focus();
   });
 };

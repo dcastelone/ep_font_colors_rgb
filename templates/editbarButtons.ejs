@@ -1,19 +1,25 @@
 <li class="separator acl-write"></li>
 <li class="acl-write font-color-icon ep_font_colors_rgb">
-  <a title="Font color">
+  <a title="Font color" aria-haspopup="true" aria-expanded="false">
     <span class="buttonicon"></span>
   </a>
 </li>
 <li id="font-color" class="acl-write ep-font-colors-rgb-panel" style="display:none;">
-  <input class="ep-font-colors-rgb-picker" type="color" value="#000000" aria-label="Font color picker">
-  <input class="ep-font-colors-rgb-value" type="text" value="" placeholder="#000000 or rgb(0,0,0)" aria-label="Font color value">
-  <button type="button" class="ep-font-colors-rgb-clear" aria-label="Clear font color">Clear</button>
-  <span class="ep-font-colors-rgb-swatches" aria-label="Preset font colors">
+  <div class="ep-font-colors-rgb-menu" role="menu" aria-label="Font color">
+    <div class="ep-font-colors-rgb-custom">
+      <input class="ep-font-colors-rgb-picker" type="color" value="#000000" aria-label="Font color picker">
+      <input class="ep-font-colors-rgb-value" type="text" value="" placeholder="#000000" aria-label="Font color value">
+    </div>
+    <div class="ep-font-colors-rgb-swatches" aria-label="Preset font colors">
     <button type="button" class="ep-font-colors-rgb-swatch" data-color="black" style="background:#000000" aria-label="black"></button>
     <button type="button" class="ep-font-colors-rgb-swatch" data-color="red" style="background:#ff0000" aria-label="red"></button>
     <button type="button" class="ep-font-colors-rgb-swatch" data-color="green" style="background:#008000" aria-label="green"></button>
     <button type="button" class="ep-font-colors-rgb-swatch" data-color="blue" style="background:#0000ff" aria-label="blue"></button>
     <button type="button" class="ep-font-colors-rgb-swatch" data-color="yellow" style="background:#ffff00" aria-label="yellow"></button>
     <button type="button" class="ep-font-colors-rgb-swatch" data-color="orange" style="background:#ffa500" aria-label="orange"></button>
-  </span>
+      <button type="button" class="ep-font-colors-rgb-swatch" data-color="#5f6368" style="background:#5f6368" aria-label="gray"></button>
+      <button type="button" class="ep-font-colors-rgb-swatch" data-color="#9900ff" style="background:#9900ff" aria-label="purple"></button>
+    </div>
+    <button type="button" class="ep-font-colors-rgb-clear" aria-label="Clear font color">Clear color</button>
+  </div>
 </li>

@@ -9,10 +9,14 @@
 }
 
 .ep-font-colors-rgb-panel {
-  align-items: center;
-  gap: 4px;
-  padding: 3px 6px;
-  white-space: nowrap;
+  position: relative;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  white-space: normal;
+  z-index: 1000;
 }
 
 #font-color.ep-font-colors-rgb-panel {
@@ -21,45 +25,83 @@
 
 #font-color.ep-font-colors-rgb-panel[style*="display: list-item"],
 #font-color.ep-font-colors-rgb-panel[style*="display: block"] {
-  display: inline-flex !important;
+  display: list-item !important;
+}
+
+.ep-font-colors-rgb-menu {
+  position: absolute;
+  top: 30px;
+  left: -38px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 176px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(60, 64, 67, 0.28);
+  color: #202124;
+}
+
+.ep-font-colors-rgb-custom {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 8px;
+  align-items: center;
 }
 
 .ep-font-colors-rgb-picker {
-  width: 34px;
-  height: 28px;
+  width: 32px;
+  height: 30px;
   padding: 0;
-  border: 1px solid #a8a8a8;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
   background: transparent;
+  cursor: pointer;
 }
 
 .ep-font-colors-rgb-value {
-  width: 150px;
-  height: 26px;
+  width: 100%;
+  min-width: 0;
+  height: 30px;
   box-sizing: border-box;
+  padding: 3px 6px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
   font-size: 12px;
 }
 
 .ep-font-colors-rgb-clear {
-  height: 26px;
+  height: 28px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  background: #fff;
+  color: #3c4043;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .ep-font-colors-rgb-swatches {
-  display: inline-flex;
-  gap: 3px;
-  vertical-align: middle;
+  display: grid;
+  grid-template-columns: repeat(8, 16px);
+  gap: 4px;
 }
 
 .ep-font-colors-rgb-swatch {
-  width: 18px;
-  height: 18px;
-  border: 1px solid #777;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid #dadce0;
+  border-radius: 50%;
   padding: 0;
+  cursor: pointer;
 }
 
 .ep-font-colors-rgb-swatch.selected {
   outline: 2px solid #1a73e8;
-  outline-offset: 1px;
+  outline-offset: 2px;
 }
 
 [data-color="black"], .color\:black { color: black; }
