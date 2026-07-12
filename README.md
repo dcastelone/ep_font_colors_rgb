@@ -18,10 +18,6 @@ fixed-palette behavior, attribute naming, localization structure, and
 export/import hook patterns provided the compatibility baseline for this
 plugin.
 
-`ep_font_colors_rgb` is an independent package and repository, not a fork of the
-upstream GitHub repository. It is intended to replace `ep_font_color` when a
-full RGB/hex text color picker is needed while preserving existing pad content.
-
 ## Install
 
 ```sh
