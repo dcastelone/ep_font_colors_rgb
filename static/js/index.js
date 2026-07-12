@@ -134,6 +134,11 @@ exports.postAceInit = (hook, context) => {
     closePanel();
   });
 
+  const $outerDocument = $('iframe[name="ace_outer"]').contents();
+  const $innerDocument = $outerDocument.find('iframe[name="ace_inner"]').contents();
+  $outerDocument.add($innerDocument).off('mousedown.epFontColorsRgbDismiss')
+    .on('mousedown.epFontColorsRgbDismiss', closePanel);
+
   $(document).on('keydown', (e) => {
     if (e.key === 'Escape') closePanel();
   });
