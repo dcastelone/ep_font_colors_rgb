@@ -2,6 +2,8 @@
 
 Etherpad text color plugin with a full RGB/hex color picker.
 
+![RGB font color picker in Etherpad](https://i.imgur.com/OE4m0S7.png)
+
 This plugin is intentionally compatible with the official `ep_font_color`
 storage format. It continues to use Etherpad's `color::<value>` attribute, so
 existing pads that contain values such as `color::red`, `color::blue`, or
