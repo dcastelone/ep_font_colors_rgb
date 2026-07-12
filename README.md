@@ -24,13 +24,9 @@ full RGB/hex text color picker is needed while preserving existing pad content.
 
 ## Install
 
-After publishing to npm:
-
 ```sh
 pnpm run plugins i ep_font_colors_rgb
 ```
-
-Do not install this alongside `ep_font_color`; it is intended to replace it.
 
 ## Compatibility
 
