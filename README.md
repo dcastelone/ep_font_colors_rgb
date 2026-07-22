@@ -1,32 +1,46 @@
 # ep_font_colors_rgb
 
-Etherpad text color plugin with a full RGB/hex color picker.
+Arbitrary RGB and hexadecimal text colors for Etherpad, with backward-compatible support for the storage format used by `ep_font_color`.
 
 ![RGB font color picker in Etherpad](https://i.imgur.com/OE4m0S7.png)
 
-This plugin is intentionally compatible with the official `ep_font_color`
-storage format. It continues to use Etherpad's `color::<value>` attribute, so
-existing pads that contain values such as `color::red`, `color::blue`, or
-`color::orange` continue to render. New colors are normalized to `#rrggbb`.
+## Features
 
-## Attribution
+- Compact color picker with hexadecimal input
+- Normalization to lowercase `#rrggbb` values
+- Validation of user-provided color values
+- Outside-click dismissal across Etherpad's editor frames
+- Import and content-collection support
+- Compatibility with historical named `ep_font_color` values
 
-This package was initially derived from the official Etherpad
-[`ep_font_color`](https://github.com/ether/ep_font_color) plugin by John
-McLear, and is licensed under the Apache License 2.0. The original
-fixed-palette behavior, attribute naming, localization structure, and
-export/import hook patterns provided the compatibility baseline for this
-plugin.
+## Installation
 
-## Install
+Remove `ep_font_color` before installing this package; both plugins provide the same editor control and attribute family.
+
+From the Etherpad directory:
 
 ```sh
 pnpm run plugins i ep_font_colors_rgb
 ```
 
+Restart Etherpad after installation. This release supports Etherpad 3.3.2 and later 3.x releases on Node.js 20 or newer.
+
 ## Compatibility
 
-- Attribute name: `color`
-- Legacy named values: `black`, `red`, `green`, `blue`, `yellow`, `orange`
-- New values: `#rrggbb`
-- Imported inline CSS such as `style="color: rgb(10, 20, 30)"` is normalized.
+The plugin continues to use Etherpad's `color` attribute:
+
+- Historical named values: `black`, `red`, `green`, `blue`, `yellow`, and `orange`
+- New values: six-digit hexadecimal colors such as `#0a141e`
+- Imported CSS colors such as `rgb(10, 20, 30)`: normalized to hexadecimal
+
+Existing pads using the official palette therefore continue to render without data migration.
+
+## Development
+
+```sh
+pnpm install --frozen-lockfile
+pnpm test
+pnpm lint
+```
+
+This package was derived from Etherpad's `ep_font_color` plugin by John McLear and other contributors. It is licensed under the Apache License 2.0; see `LICENSE`.
