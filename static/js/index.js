@@ -71,15 +71,15 @@ const renderSuggestedColors = ($panel) => {
   if ($swatches.children().length) return;
   SUGGESTED_COLORS.forEach((color) => {
     $('<button>')
-      .attr({
-        type: 'button',
-        class: 'ep-font-colors-rgb-swatch',
-        'data-color': color,
-        'aria-label': color,
-        title: color,
-      })
-      .css('background-color', color)
-      .appendTo($swatches);
+        .attr({
+          'type': 'button',
+          'class': 'ep-font-colors-rgb-swatch',
+          'data-color': color,
+          'aria-label': color,
+          'title': color,
+        })
+        .css('background-color', color)
+        .appendTo($swatches);
   });
 };
 
@@ -137,7 +137,7 @@ exports.postAceInit = (hook, context) => {
   const $outerDocument = $('iframe[name="ace_outer"]').contents();
   const $innerDocument = $outerDocument.find('iframe[name="ace_inner"]').contents();
   $outerDocument.add($innerDocument).off('mousedown.epFontColorsRgbDismiss')
-    .on('mousedown.epFontColorsRgbDismiss', closePanel);
+      .on('mousedown.epFontColorsRgbDismiss', closePanel);
 
   $(document).on('keydown', (e) => {
     if (e.key === 'Escape') closePanel();
